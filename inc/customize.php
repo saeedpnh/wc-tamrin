@@ -2,8 +2,8 @@
 function fancy_lab_customizer( $wp_customize ){
     $wp_customize->add_section(
         'sec_copyright', array(
-            'title'         =>  'Copyright Settings',
-            'description'   =>  'Copyright Section'
+            'title'         =>  __('Copyright Settings','fancy-lab'),
+            'description'   =>  __('Copyright Section','fancy-lab')
             )
     );
     // Field 1 - Copyright Text Box
@@ -17,8 +17,8 @@ function fancy_lab_customizer( $wp_customize ){
 
     $wp_customize->add_control(
         'set_copyright', array(
-            'label'         =>  'Copyright',
-            'description'   =>  'please add your copyright information',
+            'label'         =>  __('Copyright','fancy-lab'),
+            'description'   =>  __('please add your copyright information','fancy-lab'),
             'section'       =>  'sec_copyright',
             'type'          =>  'text'
         )
@@ -28,8 +28,8 @@ function fancy_lab_customizer( $wp_customize ){
     // Slider Section
     $wp_customize->add_section(
         'sec_slider', array(
-            'title'         =>  'Slider Settings',
-            'description'   =>  'Slider Section'
+            'title'         =>  __('Slider Settings','fancy-lab'),
+            'description'   =>  __('Slider Section','fancy-lab'),
             )
     );
     // Field 1 - Slider page number 1

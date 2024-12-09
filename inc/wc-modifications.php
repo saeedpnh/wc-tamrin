@@ -15,10 +15,9 @@ function fancy_lab_wc_modify(){
     }
     
     remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar' );
-    // add_action( 'woocommerce_before_main_content', 'woocommerce_get_sidebar', 7 );
+    add_action( 'woocommerce_before_main_content', 'woocommerce_get_sidebar', 7 );
     
     // Remove Page title
-
     add_filter( 'woocommerce_show_page_title', 'fancy_lab_remove_shop_title' );
     function fancy_lab_remove_shop_title( $val ){
         $val = false;
